@@ -1,12 +1,99 @@
-# React + Vite
+# 📝 To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and clean To-Do List application built using **React.js** on the frontend and **Node.js/Nest.js** on the backend.
 
-Currently, two official plugins are available:
+It lets users:
+- Add new tasks  
+- Mark tasks as completed  
+- Delete tasks  
+- Keep data stored using localStorage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was created as part of a MERN/Nest.js internship assessment.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+├── server.js (or NestJS files)
+├── client/         # React frontend
+│   ├── src/
+│   └── public/
+└── README.md
+
+
+##  Backend (Node.js / Nest.js)
+
+### Getting Started
+
+1. Install backend dependencies:
+
+npm install
+
+2. Start the backend server:
+
+node server.js
+
+Backend will run on: `http://localhost:5000`
+
+
+### API Overview
+
+| Method | Endpoint       | What it does              |
+|--------|----------------|---------------------------|
+| GET    | `/tasks`       | Fetch all tasks           |
+| POST   | `/tasks`       | Add a new task            |
+| PUT    | `/tasks/:id`   | Toggle task completion    |
+| DELETE | `/tasks/:id`   | Delete a task             |
+
+#### Sample POST Body:
+
+{
+  "title": "Build a To-Do App",
+  "completed": false
+}
+
+
+## Frontend (React + Vite)
+
+### Getting Started
+
+1. Go into the frontend folder:
+
+cd client
+
+
+2. Install frontend dependencies:
+
+npm install
+
+3. Run the frontend:
+
+npm run dev
+
+The app will open at: `http://localhost:5173`
+
+
+##  Features
+
+- 📋 Add new tasks with a form
+- ✔️ Mark tasks as done (with visual tick and strikethrough)
+- 🗑️ Delete tasks easily
+- 💾 Stores data using localStorage
+- 📱 Mobile-friendly and responsive layout
+
+## How to Test
+
+1. Run the backend (`node server.js`)
+2. Run the frontend (`npm run dev`)
+3. Try adding, completing, and deleting tasks
+4. Open DevTools Console/Network tab to see API in action
+
+
+## Tech Stack
+
+- Frontend: React.js, Vite, HTML, CSS
+- Backend: Node.js (or Nest.js)
+- Storage: In-memory + localStorage
+- Style: Pure CSS (no Tailwind used)
+- Communication: REST API (JSON)
+
+
