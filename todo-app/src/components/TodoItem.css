@@ -1,0 +1,31 @@
+.todo-item-row {
+  display: flex;              
+  align-items: center;        
+  margin: 0.75rem 0;          /* my-3 */
+  gap: 0.5rem;                /* gap-2 */
+  justify-content: space-between;
+}
+
+.todo-item-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-icon {
+  width: 1.75rem;             /* w-7 */
+}
+
+.todo-text {
+  color: #334155;             /* text-slate-700 */
+  margin-left: 1rem;          /* ml-4 */
+  font-size: 17px;
+}
+
+.todo-delete {
+  font-size: 1.25rem;         /* Approx w-3.5 */
+  color: #ef4444;             /* Optional: red tone */
+  cursor: pointer;
+  user-select: none;
+}

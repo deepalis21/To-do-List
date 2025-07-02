@@ -1,0 +1,64 @@
+.todo-container {
+  background-color: white;         /* Tailwind: bg-white */
+  align-self: center;              /* Tailwind: place-self-center */
+  width: 91.666667%;               /* Tailwind: w-11/12 */
+  max-width: 28rem;                /* Tailwind: max-w-md (448px) */
+  display: flex;                   /* Tailwind: flex */
+  flex-direction: column;         /* Tailwind: flex-col */
+  padding: 1.75rem;                /* Tailwind: p-7 (28px) */
+  min-height: 550px;              /* Tailwind: min-h-[550px] */
+  border-radius: 0.75rem;         /* Tailwind: rounded-xl (12px) */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* optional for better look */
+}
+.todo-title {
+  display: flex;              /* Tailwind: flex */
+  align-items: center;        /* Tailwind: items-center */
+  margin-top: 1.75rem;        /* Tailwind: mt-7 (28px) */
+  gap: 0.5rem;                /* Tailwind: gap-2 (8px) */
+}
+
+.todo-icon {
+  width: 2rem;                /* Tailwind: w-8 (32px) */
+}
+
+.todo-heading {
+  font-size: 1.75rem;         /* Tailwind: text-3xl (28px) */
+  font-weight: 600;   
+  color: black;         /* Tailwind: font-semibold */
+}
+.todo-input-box {
+  display: flex;                  /* flex */
+  align-items: center;           /* items-center */
+  margin: 1.75rem 0;             /* my-7 */
+  background-color: #e5e7eb;     /* bg-gray-200 */
+  border-radius: 9999px;         /* rounded-full */
+  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+.todo-input {
+  flex: 1;                       /* flex-1 */
+  height: 3.5rem;                /* h-14 */
+  background-color: transparent;/* bg-transparent */
+  border: none;                 /* border-0 */
+  outline: none;                /* outline-none */
+  padding-left: 1.5rem;         /* pl-6 */
+  padding-right: 0.5rem;        /* pr-2 */
+  color: black;                 /* for visible text */
+}
+
+.todo-input::placeholder {
+  color: #64748b;               /* text-slate-600 */
+}
+
+.todo-add-btn {
+  border: none;                 /* border-none */
+  border-radius: 9999px;        /* rounded-full */
+  background-color: #218f17;    /* bg-orange-600 */
+  width: 8rem;                  /* w-32 */
+  height: 3.5rem;               /* h-14 */
+  color: white;                 /* text-white */
+  font-size: 1.125rem;          /* text-lg */
+  font-weight: 500;             /* font-medium */
+  cursor: pointer;              /* cursor-pointer */
+}

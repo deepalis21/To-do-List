@@ -1,0 +1,7 @@
+.app-container {
+  background-color: rgb(61, 59, 59) !important;
+  color: white;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
